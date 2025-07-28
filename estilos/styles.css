@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #bf6900ff;
+    --cor02: #e1dd8fff;
+    --cor03: #235789ff;
+    --cor04: #a09be7ff;
+    --cor05: #47a8bdff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "goldman", sans-serif;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    width: 97vw;
+}
+
+h1 {
+    margin: auto;
+    width: 470px;
+    margin-bottom: -20px;
+    color: var(--cor03);
+}
+
+main {
+    background-color: var(--cor03);
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 470px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+section > div {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    background-color: var(--cor05);
+    margin: 10px 5px 0 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    position: relative;
+    font-size: 0.5em;
+    align-items: end;
+    justify-content: center;
+}
+
+section > div > p {
+    color: var(--cor05);
+}
+
+section > div > img {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: .3s;
+}
+
+
+section > div:hover {
+    background-color: var(--cor02);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.200);
+    border: 3px solid black;
+    box-sizing: border-box;
+    transition-duration: .3s;
+}
+
+section > div:hover > p {
+    color: black;
+    transition-duration: .3s;
+}
+
+section > div > img:hover {
+    filter: none;
+}
