@@ -16,24 +16,21 @@
 body {
     font-family: "goldman", sans-serif;
     font-size: 2em;
-    background-color: black;
-    color: white;
-    width: 97vw;
+    background-color: var(--cor04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
 }
 
 h1 {
-    margin: auto;
-    width: 470px;
-    margin-bottom: -20px;
+    text-align: center;
     color: var(--cor03);
 }
 
 main {
     background-color: var(--cor03);
-    margin: auto;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 470px;
+    border-radius: 20px;
 }
 
 section {
@@ -41,16 +38,16 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 0;
 }
 
 section > div {
-    display: flex;
     width: 140px;
     height: 140px;
     background-color: var(--cor05);
-    margin: 10px 5px 0 5px;
-    border-radius: 10px;
+    box-sizing: content-box;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     position: relative;
     font-size: 0.5em;
@@ -81,6 +78,7 @@ section > div:hover {
 }
 
 section > div:hover > p {
+    text-align: center;
     color: black;
     transition-duration: .3s;
 }
